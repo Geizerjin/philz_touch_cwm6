@@ -82,6 +82,13 @@ else ifeq ($(TARGET_PRODUCT), cm_tf700t)
     TARGET_SCREEN_HEIGHT := 1200
     TARGET_SCREEN_WIDTH := 1920
     BRIGHTNESS_SYS_FILE := "/sys/class/backlight/pwm-backlight/brightness"
+    
+#Asus Transformer Pad Infinity TF701T (tf700t)
+else ifeq ($(TARGET_PRODUCT), cm_tf701t)
+    TARGET_COMMON_NAME := Asus Transformer TF701T
+    TARGET_SCREEN_HEIGHT := 1600
+    TARGET_SCREEN_WIDTH := 2560
+    BRIGHTNESS_SYS_FILE := "/sys/class/backlight/pwm-backlight/brightness"
 
 #Galaxy R / Z (i9103)
 else ifeq ($(TARGET_PRODUCT), cm_i9103)
